@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Papa from "papaparse";
 import axios from "axios";
-import { FaTimes } from "react-icons/fa";
+import { FaPlus, FaTimes } from "react-icons/fa";
 import "./DockerForm.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DockerForm = () => {
   const [formData, setFormData] = useState({
@@ -91,6 +93,7 @@ const DockerForm = () => {
         });
         setShowPopup(false);
         fetchDockets();
+        toast.success("Docket added successfully!");
       })
       .catch((error) => {
         console.error("Error creating docket:", error);
@@ -102,12 +105,17 @@ const DockerForm = () => {
     fetchDockets();
   }, []);
   return (
-    <>
-      {!showPopup && (
-        <p className="add" onClick={() => setShowPopup(true)}>
-          Add Docket
-        </p>
-      )}
+    <div className="docket-container">
+      <ToastContainer />
+
+      <div className="title">
+        <h2>New Docket</h2>
+        {!showPopup && (
+          <p className="add" onClick={() => setShowPopup(true)}>
+            <FaPlus /> Add Docket
+          </p>
+        )}
+      </div>
       <table>
         <thead>
           <tr>
@@ -241,7 +249,7 @@ const DockerForm = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

@@ -1,3 +1,84 @@
+/* DockerForm.css */
+
+.add {
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 12px;
+  height: 15px;
+}
+
+.add:hover {
+  background: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+.i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ff0000;
+  float: right;
+  margin-right: 10px;
+}
+
+.docker_form {
+  padding: 0px 20px;
+}
+
+.docker_form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.docker_form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.docker_form input[type="text"],
+.docker_form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.docker_form button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.docker_form button[type="submit"]:hover {
+  background: #0056b3;
+}
+
 /*popup*/
 .popup_container {
   position: fixed;
@@ -24,3 +105,9 @@
   top: 10px;
   right: 10px;
 }
+
+.docket-container {
+  margin: 20px 50px;
+}
+
+

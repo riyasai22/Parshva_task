@@ -58,7 +58,6 @@ db.once("open", () => {
   //             console.error("Error saving supplier:", err);
   //           });
   //       });
-
   //       console.log("CSV file processing complete.");
   //     });
 });
@@ -76,7 +75,7 @@ app.get("/api/supplier", async (req, res) => {
   // Supplier fetching logic
   try {
     const supp = await Supplier.find();
-    console.log(supp);
+    // console.log(supp);
     res.json(supp);
   } catch (error) {
     console.error("Error fetching suppliers in route:", error);
