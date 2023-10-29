@@ -7,27 +7,27 @@ ReactJs, ExpressJs, NodeJs, MongoDB, Mongoose, Axios
 ### API
 **Summary of the API endpoints and their tasks:** 
 
-1. GET /api/supplier:
+**1. GET /api/supplier:**
 
-Purpose: Fetch a list of suppliers.
-Logic: Retrieves a list of suppliers from your MongoDB database.
+**Purpose:** Fetch a list of suppliers.
+**Logic:** Retrieves a list of suppliers from your MongoDB database.
 
-2. GET /api/purchase:
+**2. GET /api/purchase:**
 
-Purpose: Fetch purchase orders for a chosen supplier.
-Query Parameter: supplier specifies the chosen supplier.
-Logic: Reads data from a CSV file, processes it to match the chosen supplier, and returns the associated purchase orders for that supplier.
+**Purpose:** Fetch purchase orders for a chosen supplier.
+**Query Parameter:** supplier specifies the chosen supplier.
+**Logic:** Reads data from a CSV file, processes it to match the chosen supplier, and returns the associated purchase orders for that supplier.
 
-3. POST /api/add:
+**3. POST /api/add:**
 
-Purpose: Add a new docket to the database.
-Request Body: Includes name, startTime, endTime, hoursWorked, ratePerHour, supplier, and purchaseOrder.
-Logic: Creates a new docket entry in the database with the provided data.
+**Purpose:** Add a new docket to the database.
+**Request Body:** Includes name, startTime, endTime, hoursWorked, ratePerHour, supplier, and purchaseOrder.
+**Logic:** Creates a new docket entry in the database with the provided data.
 
-4. GET /api/dockets:
+**4. GET /api/dockets:**
 
-Purpose: Fetch a list of all dockets.
-Logic: Retrieves a list of all dockets from your MongoDB database.
+**Purpose:** Fetch a list of all dockets.
+**Logic:** Retrieves a list of all dockets from your MongoDB database.
 
 **Tasks:**
 
